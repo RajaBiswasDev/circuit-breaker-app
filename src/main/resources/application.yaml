@@ -25,4 +25,6 @@ resilience4j.circuitbreaker:
       sliding-window-size: 5
       minimum-number-of-calls: 2
 
-recommendingAppUrl: "http://localhost:8090/recommended"
+#Update the below url with the actual url of circuit-breaker-bookstore application url
+#If running in local - http://localhost:8090/recommended
+recommendingAppUrl: "http://<circuit-breaker-bookstore app host>:8090/recommended"
