@@ -21,10 +21,7 @@ resilience4j.circuitbreaker:
   instances:
     circuitbreaker:
       registerHealthIndicator: true
-      failure-rate-threshold: 10
-      sliding-window-size: 5
-      minimum-number-of-calls: 2
+      sliding-window-size: 6
+      minimum-number-of-calls: 3
 
-#Update the below url with the actual url of circuit-breaker-bookstore application url
-#If running in local - http://localhost:8090/recommended
-recommendingAppUrl: "http://<circuit-breaker-bookstore app host>:8090/recommended"
+recommendingAppUrl: "http://localhost:8090/recommended"
